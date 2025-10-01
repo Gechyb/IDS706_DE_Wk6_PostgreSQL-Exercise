@@ -1,10 +1,13 @@
 
 -- What are the 5 cheapest restaurants based on avg_cost?
+
 SELECT name, cuisine, avg_cost
 FROM restaurants
 ORDER BY avg_cost ASC
 LIMIT 5;
+
 -- Which nearby restaurants (within 5 miles) are highly?
+
 SELECT name, cuisine, distance_miles, rating
 FROM restaurants
 WHERE distance_miles <= 5 AND rating >= 4.0
