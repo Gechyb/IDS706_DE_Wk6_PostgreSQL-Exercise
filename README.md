@@ -19,7 +19,7 @@
 ![Output](images/query_5.png)
 
 - How many restaurants are there per cuisine, highest count first?
-![Output](images/query_6.png)
+![alt text](images/query_6.png)
 
 
 
