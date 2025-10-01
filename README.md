@@ -8,4 +8,7 @@ List name, avg_cost and cost with 7.5% tax as cost_with_tax.
 How many restaurants are there per cuisine, highest count first?
 
 **Results from Running this queries above**
-![Output](/workspaces/images/imagesforexcersice.png)
+
+![Output](images/imagesforexcersice.png)
+
+
