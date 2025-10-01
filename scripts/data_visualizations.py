@@ -1,9 +1,7 @@
 import os
 import psycopg2
-from dotenv import load_dotenv
-
-# Load .env if present (does nothing if file not found)
-load_dotenv()
+import pandas as pd
+import plotly.express as px
 
 DB_NAME = os.getenv("DB_NAME", os.getenv("PGDATABASE", "duke_restaurants"))
 DB_USER = os.getenv("DB_USER", os.getenv("PGUSER", "vscode"))
@@ -11,6 +9,10 @@ DB_PASSWORD = os.getenv("DB_PASSWORD", os.getenv("PGPASSWORD", "vscode"))
 # In devcontainer, host is 'db'; on your laptop use 'localhost'
 DB_HOST = os.getenv("DB_HOST", os.getenv("PGHOST", "localhost"))
 DB_PORT = os.getenv("DB_PORT", os.getenv("PGPORT", "5432"))
+
+conn = psycopg2.connect(
+    dbname=DB_NAME, user=DB_USER, password=DB_PASSWORD, host=DB_HOST, port=DB_PORT
+)
 
 cur = conn.cursor()
 

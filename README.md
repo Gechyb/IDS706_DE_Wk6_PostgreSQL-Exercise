@@ -21,6 +21,9 @@
 - How many restaurants are there per cuisine, highest count first?
 ![alt text](images/query_6.png)
 
+**Visualizations**
+![alt text](images/average_cost_by_cuisine.png)
+
 
 
 
